@@ -1,2 +1,2 @@
-# mhw1
-# Piero Galatà - O46001900
+# Piero Galatà - O46001900 / MHW1
+
