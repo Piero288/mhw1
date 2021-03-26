@@ -1,0 +1,280 @@
+header{
+    background-image: url("sfondo1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+#overlay{
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 30%);
+    color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed; /*per fissare la nav anche quando scorri verso il basso compare*/
+    z-index: 1;
+}
+
+#menu {
+    display: none;
+}
+  
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    #links {
+      display: none;
+    }
+  
+    #menu {
+      display: block;
+      padding: 25px;
+    }
+}
+
+h1{
+    font-size: 55px;
+    color: white;
+    margin-left:30px;
+    margin-bottom: 0;
+}
+
+#overlay p{
+    font-size: 25px;
+    color: white;
+    margin-left:30px;
+    margin-top: 0;
+    width: 35%;
+}
+
+@media (max-width: 600px) {
+    h1{
+        font-size: 30px;
+        width: 90%;
+    }
+
+    #overlay p{
+        font-size: 20px;
+    }
+}
+
+a:hover{
+    border-bottom: 2px solid white;
+}
+
+#links a{
+    margin: 20px;
+    font-size: 25px; 
+    cursor: pointer;   
+}
+
+#logo{
+    height: 100%;
+}
+
+#logo img{
+    width: 210px;
+    height: 50px;
+    margin: 5px;
+    padding-bottom: 15px;
+    padding-left: 7px;
+}
+
+body{
+    color: black;
+    font-family: 'Lora', serif;
+    font-size: 35px;
+    margin: 0;
+}
+
+section{
+    margin: 30px;
+}
+
+#inizio h1, section h1{
+    font-size: 50px;
+    color:rgba(161, 32, 9, 0.938);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#inizio p{
+    font-size: 20px; 
+    padding: 30px;
+    text-align: center;
+    width: auto;
+    margin: 0;
+} 
+
+@media (max-width: 600px) {
+    #inizio h1, section h1 {
+      font-size: 30px
+    }
+}
+
+#part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    padding: 20px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.testo{
+    width: 100%;
+}
+
+.immagine{
+    width: 55%;
+    height: 55%;
+}
+
+.immagine img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+#part h1{
+    width: 100%;
+    height: 30%;
+    font-size: 45px;
+    color: rgb(255, 196, 34);
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+
+article{
+    width: 100%;
+    height: 70%;
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .immagine{
+        width: auto;
+    }
+
+    #part{
+        height: 60%;
+    }
+
+    #part h1{
+        text-align: left;
+        font-size: 25px;
+    }
+
+    .testo{
+       width: auto;
+    }
+
+    article{
+        text-align: left;
+        padding: 0;
+    }
+}
+
+#contenitore{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contenuto{
+    width: 30%;
+}
+
+.imm {
+    height: 60%;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.imm img{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.ctesto{
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.ctesto h1 {
+    font-size: 40px;
+}
+
+.ctesto p{
+    font-size: 20px;
+    text-align: left;
+}
+
+@media (max-width: 600px){
+    #contenitore{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .ctesto p{
+        text-align: center;
+        width: auto;
+    }
+    .contenuto{
+        width: auto;
+    }
+    .ctesto h1{
+        font-size: 30px;
+    }
+}
+
+footer {
+    background-color: rgb(31, 31, 31);
+    padding: 40px;
+    text-align: center;
+}
+
+footer p{
+    color: whitesmoke;
+    font-size: .5em;
+    margin: 0;
+    padding: 5px;
+}
